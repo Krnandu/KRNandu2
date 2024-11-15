@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Ideas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Crazy Collections!</h1>
+    <nav>
+      <ul>
+        <li><a href="#Gift Gallery ">#Gift Gallery  </a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Image Carousel Section -->
+    <section id="image-carousel">
+      <h2>Explore Gift Categories</h2>
+      <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-images">
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/premium-photo/3d-birthday-gift-boxes_113255-4356.jpg" alt="Gift 1">
+            <p class="carousel-description">A thoughtful gift for a special occasion!</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.abhiartsgiftland.in/wp-content/uploads/2022/03/wedding-hampers-gift-in-surat.jpg" alt="Gift 2">
+            <p class="carousel-description">The perfect gift for tech enthusiasts!</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71gw8R+g3cL._AC_UF894,1000_QL80_.jpg" alt="Gift 3">
+            <p class="carousel-description">Gifts that show you care.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/11/6f/f6/116ff66d75d706f2a2517828b9300e8a.jpg" alt="Gift 4">
+            <p class="carousel-description">For Tech Lovers</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kbs9k7k0/festive-gift-box/f/5/w/special-gift-for-raksha-bandhan-premium-rakhi-chocolates-gift-original-imaft24hhnzkfshj.jpeg?q=90&crop=false" alt="Gift 5">
+            <p class="carousel-description"> For a Sibiling Star.</p>
+          </div>
+          <div class="carousel-item">
+            <img src=" https://feeldis.com/wp-content/uploads/2024/07/DALL%C2%B7E-2024-07-11-22.00.53-A-beautifully-arranged-display-of-unique-wooden-gift-items-including-intricately-carved-wooden-boxes-personalized-wooden-plaques-stylish-wooden-uten.webp" alt="Gift 6">
+            <p class="carousel-description"> @ Wooden Lovers</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.incrediblegifts.in/wp-content/uploads/2023/06/combo.jpg" alt="Gift 7">
+            <p class="carousel-description"> Express Gratitude!</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.davaoflorist.com/images/detailed/4/flower-chocolate-bear-10.jpg" alt="Gift 8">
+            <p class="carousel-description"> Gift for All</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.saugatonline.com/products_image/0abe7d7a14d0a21d3189b3935fddd403.jpg" alt="Gift 9">
+            <p class="carousel-description">Gifts that show you Love.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/premium-photo/birthday-gift-boxes_113255-4221.jpg " alt="Gift 10">
+            <p class="carousel-description">Gifts for a special occasion!</p>
+          </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Random Joke Section -->
+    <section id="random-joke">
+      <h2>Need a Laugh?</h2>
+      <button id="fetch-joke">Get a Random Joke</button>
+      <p id="joke-text">Click the button to get a joke!</p>
+    </section>
+
+    <!-- Quiz Section for Gift Recommendations -->
+    <section id="gift-quiz">
+      <h2>Find Your Perfect Gift</h2>
+      <form id="quiz-form">
+        <p>1. On which occassion are you gift for?</p>
+        <label>
+          <input type="radio" name="recipient" value="Birthday" required> For Birthday
+        </label><br>
+        <label>
+          <input type="radio" name="recipient" value="Housewarming"> For Housewarming
+        </label><br>
+        <label>
+            <input type="radio" name="recipient" value="Anniversaries">  For Anniversaries
+          </label><br>
+          <label>
+            <input type="radio" name="recipient" value="Promotions or Career Milestones">  For Promotions or Career Milestones
+          </label><br>
+          </label><br>
+
+        <p>2. What's your budget?</p>
+        <label>
+          <input type="radio" name="budget" value="Less than 1000" required> Less than 1000
+        </label><br>
+        <label>
+          <input type="radio" name="budget" value="1000 - 2000"> 1000 - 2000
+        </label><br>
+        <label>
+          <input type="radio" name="budget" value="More than 2000"> More than 2000
+        </label><br>
+
+        <p>3. What type of gift are you looking for?</p>
+        <label>
+          <input type="radio" name="gift_type" value="Gift Baskets" required> Gift Baskets
+        </label><br>
+        <label>
+          <input type="radio" name="gift_type" value="Creative Gifts">  Creative Gifts
+        </label><br>
+        <label>
+          <input type="radio" name="gift_type" value="Luxury Gifts">  Luxury Gifts
+        </label><br>
+        <label>
+         <input type="radio" name="gift_type" value="Tech Gifts">  Tech Gifts
+        </label><br>    
+          
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="quiz-result" style="display:none;">
+        <h3>Recommended Gift Type:</h3>
+        <p id="recommended-gift"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Gift Ideas Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

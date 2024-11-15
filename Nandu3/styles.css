@@ -1,0 +1,160 @@
+/* Basic styles */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 0;
+    background-color: #f67280;
+  }
+  
+  header {
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 100px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #4B0082;
+  }
+  
+  section {
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  /* Image Carousel */
+  .carousel {
+    position: relative;
+    max-width: 500%;
+    margin: 50 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-images {
+    display: flex;
+    overflow: hidden;
+    width: 300%;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .carousel-item {
+    flex-shrink: 0;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .carousel-images img {
+    width: 60%;
+    height: 80%;       
+  }
+  
+  .carousel-description {
+    font-size: 1.2rem;
+    color:#20B2AA;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* Carousel Controls */
+  .carousel .prev,
+  .carousel .next {
+    position: absolute;
+    top: 40%;
+    background-color: #e20b0b(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 50px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel .prev {
+   left: 50px;
+  }
+  
+  .carousel .next {
+    right: 50px;
+  }
+  
+  /* Quiz Section Styling */
+  form {
+    margin-top: 1px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #FFE4C4(78, 228, 18);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e459aa;
+  }
+  
+  #quiz-result {
+    margin-top: 20px;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 600px) {
+    main {
+      grid-template-columns: 1fr; /* Stack the sections vertically on small screens */
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-images {
+      width: 30%;
+    }
+  }
+  
+  /* Tablet-specific styles */
+  @media (max-width: 900px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .carousel-images {
+      width: 30%;
+    }
+  }
+
+#random-joke{
+  text-align: center;
+}
